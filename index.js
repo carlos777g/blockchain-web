@@ -19,6 +19,7 @@ const config = {
     },
 };
 
+// ruta principal
 app.get("/", async (req, res) => {
     try {
         const result = await axios.get(API_URL + "/symbols", config);
@@ -29,19 +30,20 @@ app.get("/", async (req, res) => {
     }
 });
 
+// ruta buscador de cripto moneda particular
 app.get("/buscar-moneda", (req, res) => {
     res.render("moneda.ejs");
 });
 
+// ruta /about
 app.get("/about", (req, res) => {
     res.render("about.ejs");
 })
 
+// ruta post para consultar el precio de una criptomoneda
 app.post("/get-price", async (req, res) => {
     try{
         const result = await axios.get(API_URL + "/tickers/" + req.body.informacion, config);
-        
-        
         res.render("moneda.ejs", { content: result.data } );
     } catch (error) {
         res.render("moneda.ejs", { error: error.message })
@@ -49,6 +51,6 @@ app.post("/get-price", async (req, res) => {
 });
 
 
-app.listen(port, '0.0.0.0',() => {
+app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })
