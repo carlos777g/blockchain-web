@@ -1,0 +1,8 @@
+Para incializar el proyecto, debes descargar las dependencias con el comando 'npm install'
+Para que la web funcione, debes tener una keyapi de Blockchain, puedes obtener la tuya desde: https://api.blockchain.com/v3/#/unauthenticated/getTickerBySymbol
+
+Luego debes crear tu archivo ".env" en donde se almacenará tu apikey de la forma:
+API_KEY = "tu_api_key"
+
+
+
