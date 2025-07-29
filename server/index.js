@@ -24,9 +24,11 @@ app.get("/", async (req, res) => {
     try {
         const result = await axios.get(API_URL + "/symbols", config);
         const content = result.data;
-        res.render("index.ejs", { content: Object.entries(content) });
+        res.json(Object.entries(content));
+        // res.render("index.ejs", { content: Object.entries(content) });
     } catch (error) {
-        res.render("/", {error: error.message});
+        res.status(500).json({ error: error.message });
+        // res.render("/", {error: error.message});
     }
 });
 
