@@ -1,7 +1,13 @@
-function NotFoundPage() {
-    return (
-        <h1>Error 404 Not Found</h1>
-    )
+import styled from "styled-components";
+
+export function NotFoundPage() {
+  return (
+    <Container>
+      <h1>NotFoundPage</h1>
+    </Container>
+  )
 }
 
-export default NotFoundPage;
+const Container = styled.div`
+    height: 100vh;
+`

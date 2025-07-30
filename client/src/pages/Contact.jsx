@@ -1,12 +1,13 @@
-import TemporaryDrawer from "../components/TemporaryDrawer";
+import styled from "styled-components";
 
-function Contact() {
-    return (
-        <div>
-            <TemporaryDrawer />
-            <h1>Contact</h1>
-        </div>
-    )
+export function Contact() {
+  return (
+    <Container>
+      <h1>Contact</h1>
+    </Container>
+  )
 }
 
-export default Contact;
+const Container = styled.div`
+    height: 100vh;
+`
