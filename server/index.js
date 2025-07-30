@@ -2,6 +2,7 @@ import express, { application } from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 import "dotenv/config"
+import cors from "cors";
 
 const app = express();
 const port = 3000;
@@ -9,8 +10,9 @@ const API_KEY = process.env.API_KEY;
 const API_SECRET_KEY = process.env.API_SECRET_KEY;
 const API_URL = "https://api.blockchain.com/v3/exchange";
 
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended:true }));
+app.use(cors());
+// app.use(express.static("public"));
+// app.use(bodyParser.urlencoded({ extended:true }));
 
 const config = {
     headers: {
