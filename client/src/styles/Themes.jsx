@@ -21,8 +21,9 @@ export const Light ={
     text: "rgb(45,45,45)",
     primary: "rgb(52, 131, 235)",
     bg4:"#9247FC",
+    bg5: "rgb(217, 216, 216)",
     bgtotal:"#EDF3FB",
-    bgtgderecha:"#fff",
+    bgtgderecha:"#8f8a8a",
     barrascroll: "#a8a7a7",
 
 
@@ -72,6 +73,7 @@ export const Dark = {
     text: "rgb(210,210,210)",
     primary: "rgb(52, 131, 235)",
     bg4:"#9247FC",
+    bg5: "rgb(30,30,30)",
     bgtotal:"#21252B",
     barrascroll: "#A18AFF",
 

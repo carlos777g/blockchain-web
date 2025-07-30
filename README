@@ -1,4 +1,5 @@
-Para incializar el proyecto, debes descargar las dependencias con el comando 'npm install'
+Para incializar el proyecto, debes descargar las dependencias con el comando 'npm install', dentro de la carpera server para el backend y también dentro de client para el frontend
+Luego debes correr ambos servicios (backend y frontend), dentro de /server puedes usar >>> npx nodemon index.js y dentro de /client puedes usar >>> npm run dev
 Para que la web funcione, debes tener una keyapi de Blockchain, puedes obtener la tuya desde: https://api.blockchain.com/v3/#/unauthenticated/getTickerBySymbol
 
 Luego debes crear tu archivo ".env" en donde se almacenará tu apikey de la forma:
